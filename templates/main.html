@@ -1,0 +1,22 @@
+{% extends "outline.html" %}
+
+{% block title %}
+    Display
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th> Source </th>
+            <th> Username </th>
+            <th> Password </th>
+        </tr>
+        {% for symbol in symbols %}
+            <tr>
+                <td> {{ symbol[0] }} </td>
+                <td> {{ symbol[1] }} </td>
+                <td> {{ symbol[2] }} </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "outline.html" %}
+
+{% block title %}
+    Change
+{% endblock %}
+
+{% block main %}
+<form action="/change" method="post">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="change" placeholder="Location" type="text">
+    </div>
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="type" placeholder="add/delete" type="text">
+    </div>
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="user" placeholder="Username" type="text">
+    </div>
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="pass" placeholder="Password" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Change</button>
+</form>    
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "outline.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block main %}
+<form action="/search" method="post">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="search" placeholder="search for a specific location" type="text"
+    </div>
+    <button class="btn btn-primary" type="submit">Search</button>
+<form action="/change" method="post">    
+{% endblock %}
